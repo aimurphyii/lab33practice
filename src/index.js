@@ -2,10 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import App from "./app.js";
-
+import ContextProvider from "./components/context/context";
 class Main extends React.Component {
   render() {
-    return <App />;
+    return (
+      <ContextProvider>
+        <App />
+      </ContextProvider>
+    );
   }
 }
 
